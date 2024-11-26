@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Anggota Kelompok</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+    /* Bagian Wrapper Anggota Kelompok */
+#Anggota-Kelompok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(#8FBFDA, #2C6485);
+}
+
+/* Judul */
+.team-heading h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+/* Ukuran Wrapper Swiper */
+.swiper {
+    width: 100%; /* Lebar slider */
+    max-width: 600px; /* Batas maksimum lebar slider */
+    margin: auto; /* Posisi slider di tengah */
+    padding: 20px 0; /* Jarak atas-bawah slider */
+    overflow: visible; /* Pastikan elemen tidak terpotong */
+}
+
+/* Ukuran Setiap Slide */
+.swiper-slide {
+    display: flex;
+    flex-direction: column; /* Tata letak vertikal */
+    align-items: center; /* Pusatkan konten */
+    background: #ffffff; /* Latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    height: auto; /* Tinggi otomatis mengikuti konten */
+}
+
+/* Wrapper Gambar */
+.t-b-img {
+    width: 3cm; /* Lebar gambar 3 cm */
+    height: 4cm; /* Tinggi gambar 4 cm */
+    overflow: hidden; /* Potong bagian gambar yang keluar */
+    margin-bottom: 10px; /* Jarak dengan teks */
+    border-radius: 5px; /* Sudut melengkung */
+    border: 2px solid #ddd; /* Garis tepi tipis */
+}
+
+/* Gambar */
+.t-b-img img {
+    width: 100%; /* Gambar memenuhi lebar */
+    height: 100%; /* Gambar memenuhi tinggi */
+    object-fit: cover; /* Potong gambar sesuai ukuran */
+    object-position: center; /* Fokus gambar di tengah */
+}
+
+/* Teks di Bawah Gambar */
+.t-b-text {
+    text-align: center; /* Teks rata tengah */
+    padding: 10px 0; /* Jarak atas-bawah teks */
+}
+
+/* Nama */
+.t-b-text strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/* NPM */
+.t-b-text span {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+/* Peran */
+.t-b-text p {
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+/* Sosial Media */
+.team-sosial {
+    margin-top: 10px;
+}
+
+.team-sosial a {
+    font-size: 1.2rem;
+    color: #2C6485;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.team-sosial a:hover {
+    color: #3d69fa; /* Warna ikon saat hover */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .swiper {
+        max-width: 100%; /* Lebar penuh pada layar kecil */
+        padding: 10px 0;
+    }
+
+    .t-b-img {
+        width: 2.5cm; /* Lebar gambar lebih kecil */
+        height: 3.3cm; /* Tinggi gambar lebih kecil */
+    }
+}
+    </style>
+    <style>
+      .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color: #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    position: sticky; 
+    top: 0; 
+    z-index: 999; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+.nav-link {
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color: #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    position: sticky; 
+    top: 0; 
+    z-index: 999; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+.nav-link {
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #112436; 
+    transform: scale(1.05) translateX(10px); 
+}
+.dropdown-menu {
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color : #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.dropdown.show .dropdown-menu {
+    opacity: 1; 
+    visibility: visible; 
+}
+.dropdown-item {
+    color: #ffffff;
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: scale(1.05) translateX(10px);
+}
+    </style>
+</head>
+
+<body style="margin-top: 0;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <a class="navbar-brand" href="index.html">
+
+            <span class="font-bold text-white">Alge</span><span class="fond-ligth text-dark">braic</span>
+            <span class="font-bold text-white">Li</span><span class="fond-ligth text-dark">mits</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile Kelompok</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Aljabar</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aljabar.html"> Materi Limit Fungsi Aljabar</a>
+                        <a class="dropdown-item" href="contoha.html">Contoh Soal
+                        </a>
+                        <a class="dropdown-item" href="latihana.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Sepihak</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sepihak.html">Materi Limit Sepihak</a>
+                        <a class="dropdown-item" href="contohb.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanb.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Trigonometri</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="trigonometri.html">Materi Limit Fungsi Trigonometri</a>
+                        <a class="dropdown-item" href="contohc.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanc.html">Latihan Soal</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <div class= "section-wrapper">
+
+  <section id="Anggota-Kelompok">
+    <div class="team-heading">
+      <h3>Anggota Kelompok</h3>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <!-- Gambar -->
+            <div class="t-b-img">
+                <img src="anggi.jpg" alt="Foto Anggi">
+            </div>
+            <!-- Teks -->
+            <div class="t-b-text">
+            <strong>Anggi Salsabila MY</strong>
+            <span>247006111038</span>
+            <p>Desain UI/UX</p>
+            <div class="team-sosial">
+                <a href="https://www.instagram.com/slsbilaa_635" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+            <!-- Gambar -->
+            <div class="t-b-img">
+                <img src="syaila.jpg" alt="Foto Syaila">
+            </div>
+            <!-- Teks -->
+            <div class="t-b-text">
+            <strong>Syaila Fa Agna</strong>
+            <span>247006111047</span>
+            <p>Programmer Back-end</p>
+            <div class="team-sosial">
+                <a href="https://www.instagram.com/s00lf0" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+            <!-- Gambar -->
+            <div class="t-b-img">
+                <img src="chety.jpg" alt="Foto Chety">
+            </div>
+            <!-- Teks -->
+            <div class="t-b-text">
+            <strong>Chety Ketrianur</strong>
+            <span>247006111048</span>
+            <p>Analisis dan Manual Book</p>
+            <div class="team-sosial">
+                <a href="https://www.instagram.com/ktryn_nnn" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+            <!-- Gambar -->
+            <div class="t-b-img">
+                <img src="faisal.jpg" alt="Foto Faisal">
+            </div>
+            <!-- Teks -->
+            <div class="t-b-text">
+            <strong>Faisal Hadi</strong>
+            <span>247006111052</span>
+            <p>Programmer Front-end</p>
+            <div class="team-sosial">
+                <a href="https://www.instagram.com/faisal_lorentz" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+            </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+        centeredSlides: true, // Slide aktif berada di tengah
+        slidesPerView: "auto", // Slide menyesuaikan ukuran
+        spaceBetween: 20, // Jarak antar slide
+        grabCursor: true, // Mengubah kursor menjadi "grabbing"
+        effect: "slide", // Efek transisi
+        speed: 500, // Kecepatan animasi geser dalam milidetik
+        loop: true, // Looping slide
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true, // Pagination dapat diklik
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</body>
+</html>

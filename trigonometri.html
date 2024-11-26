@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Fungsi Trigonometri</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="materi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script">
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          },
+          options: {
+            renderActions: {
+              findScript: [10, function (doc) {
+                // Menambahkan gaya responsif
+                doc.options.styles = {
+                  'display': 'inline-block',
+                  'max-width': '100%', // Memastikan tidak melampaui lebar kontainer
+                  'overflow-wrap': 'break-word' // Memungkinkan teks untuk membungkus
+                };
+              }, '']
+            }
+          }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">
+            Materi Limit Kalkulus - Limit Fungsi Trigonometri
+        </h1>
+        <p class="text-center">
+            Belajar konsep dasar limit dalam kalkulus.
+        </p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <span class="font-bold text-white">Alge</span><span class="fond-ligth text-dark">braic</span>
+            <span class="font-bold text-white">Li</span><span class="fond-ligth text-dark">mits</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile Kelompok</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Aljabar</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aljabar.html"> Materi Limit Fungsi Aljabar</a>
+                        <a class="dropdown-item" href="contoha.html">Contoh Soal
+                        </a>
+                        <a class="dropdown-item" href="latihana.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Sepihak</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sepihak.html">Materi Limit Sepihak</a>
+                        <a class="dropdown-item" href="contohb.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanb.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Trigonometri</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="trigonometri.html">Materi Limit Fungsi Trigonometri</a>
+                        <a class="dropdown-item" href="contohc.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanc.html">Latihan Soal</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container mt-0" style="margin-top: 275px;">
+        <div class="row mt-3">
+            <div class="col-md-8">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Apa itu Limit Trigonometri?</h2>
+                            <p>
+                                limit trigonometri merupakan nilai paling dekat dari suatu sudut. Istilah-istilah yang ada dalam trigonometri yaitu sinus (sin), cosinus (cos), tangen (tan), secan (sec), cosecan (csc), dan cotangent (ctg).
+                            </p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Definisi Limit Trigonometri</h2>
+                        <p>
+                            limit fungsi trigonometri merupakan nilai paling dekat dari suatu sudut pada fungsi trigonometri. Ada beberapa manfaat dari penggunaan limit trigonometri, antara lain:
+                        </p>
+                        <ul>
+                            <li><span class="custom-size">Membantu Menentukan Batas-Batas Integral</span></li>
+                            <li><span class="custom-size">Membantu Menyelesaikan Persamaan Diferensials</span></li>
+                            <li><span class="custom-size">Membantu Memahami Sifat-Sifat Suatu Fungsi Trigonometri</span></li>
+                            <li><span class="custom-size">Membantu dalam Perhitungan yang Lebih Akurat</span></li>
+                        </ul>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Teorema Limit Fungsi Trigonometri</h2>
+                            <br>
+                                <p>
+                                    Limit fungsi trigonometri adalah pengembangan dari definisi limit fungsi aljabar. Menyelesaikan limit fungsi trignometri dengan menggunkan teorema ini pastinya akan mempercepat menyelesaikan masalah matematika tentang limit fungsi trigonometri. Beberapa teorema limit fungsi trigonometri yang akan kita buktikan antara lain:
+                                </p>
+                                \(\begin{aligned}
+                                1. & \quad \lim_{x \to 0} \frac{\sin x}{x} = 1, \quad \text{atau} \quad \lim_{x \to 0} \frac{x}{\sin x} = 1 \\[10pt]
+                                2. & \quad \lim_{x \to 0} \frac{\tan x}{x} = 1, \quad \text{atau} \quad \lim_{x \to 0} \frac{x}{\tan x} = 1 \\[10pt]
+                                3. & \quad \lim_{x \to 0} \frac{\sin ax}{\sin bx} = \frac{a}{b}, \quad \text{atau} \quad \lim_{x \to 0} \frac{ax}{bx} = \frac{a}{b} \\[10pt]
+                                4. & \quad \lim_{x \to 0} \frac{\tan ax}{\tan bx} = \frac{a}{b}, \quad \text{atau} \quad \lim_{x \to 0} \frac{ax}{bx} = \frac{a}{b} \\[10pt]
+                                5. & \quad \lim_{x \to 0} \frac{\sin ax}{\tan bx} = \frac{a}{b}, \quad \text{atau} \quad \lim_{x \to 0} \frac{\tan ax}{\sin bx} = \frac{a}{b} \\[10pt]
+                                6. & \quad \lim_{x \to 0} \frac{\tan ax}{\tan bx} = \frac{a}{b}, \quad \text{atau} \quad \lim_{x \to 0} \frac{\sin ax}{\sin bx} = \frac{a}{b}
+                                \end{aligned}\)
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Sudut-Sudut Istimewa dalam Trigonometri</h2>
+                            <p>Sudut-sudut istimewa dalam trigonometri, yaitu \(0^o, 30^o, 45^o, 60^o, 90^o.\) Perhatikan tabel sudut istimewa dari 4 kuadran di bawah ini agar lebih mudah dalam memahami sudut istimewa.</p>
+                            <h4>Tabel Kuadran sudut Istmewa</h4>
+                             <!-- Kuadran 1 -->
+                            <div class="kuadran">
+                                <h2>Kuadran 1</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sudut</th>
+                                            <th>Nilai Sin</th>
+                                            <th>Nilai Cos</th>
+                                            <th>Nilai Tan</th>
+                                            <th>Nilai Sec</th>
+                                            <th>Nilai Csc</th>
+                                            <th>Nilai Cot</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0°</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>undefined</td>
+                                            <td>undefined</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30°</td>
+                                            <td>\(\frac{1}{2}\)</td>
+                                            <td>\(\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(\frac{1}{3}\sqrt{3}\)</td>
+                                            <td>\(\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>2</td>
+                                            <td>\(\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>45°</td>
+                                            <td>\(\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>\(\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>1</td>
+                                            <td>\(\sqrt{2}\)</td>
+                                            <td>\(\sqrt{2}\)</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>60°</td>
+                                            <td>\(\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(\frac{1}{2}\)</td>
+                                            <td>\(\sqrt{3}\)</td>
+                                            <td>2</td>
+                                            <td>\(\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>\(\frac{1}{3}\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>90°</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>undefined</td>
+                                            <td>undefined</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </span>
+                        <span class="text-justify">
+                            <div class="kuadran">
+                                <h2>Kuadran 2</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sudut</th>
+                                            <th>Nilai Sin</th>
+                                            <th>Nilai Cos</th>
+                                            <th>Nilai Tan</th>
+                                            <th>Nilai Sec</th>
+                                            <th>Nilai Csc</th>
+                                            <th>Nilai Cot</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>120°</td>
+                                            <td>\(\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(-\frac {1}{2}\)</td>
+                                            <td>\(-\sqrt{3}\)</td>
+                                            <td>-2</td>
+                                            <td>\(\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>\(-\frac{1}{3}\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>135°</td>
+                                            <td>\(\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>\(-\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>-1</td>
+                                            <td>\(-\sqrt{2}\)</td>
+                                            <td>\(\sqrt{2}\)</td>
+                                            <td>-1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>150°</td>
+                                            <td>\(\frac{1}{2}\)</td>
+                                            <td>\(-\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(-\frac{1}{3}\sqrt{3}\)</td>
+                                            <td>\(-\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>2</td>
+                                            <td>\(-\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>180°</td>
+                                            <td>0</td>
+                                            <td>-1</td>
+                                            <td>0</td>
+                                            <td>-1</td>
+                                            <td>undefined</td>
+                                            <td>undefined</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </span>
+                        <span class="text-justify">
+                            <div class="kuadran">
+                                <h2>Kuadran 3</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sudut</th>
+                                            <th>Nilai Sin</th>
+                                            <th>Nilai Cos</th>
+                                            <th>Nilai Tan</th>
+                                            <th>Nilai Sec</th>
+                                            <th>Nilai Csc</th>
+                                            <th>Nilai Cot</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>210°</td>
+                                            <td>\(-\frac {1}{2}\)</td>
+                                            <td>\(-\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(\frac{1}{3}\sqrt{3}\)</td>
+                                            <td>\(-\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>-2</td>
+                                            <td>\(-\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>225°</td>
+                                            <td>\(-\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>\(-\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>1</td>
+                                            <td>\(-\sqrt{2}\)</td>
+                                            <td>\(-\sqrt{2}\)</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>240°</td>
+                                            <td>\(-\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(-\frac {1}{2}\)</td>
+                                            <td>\(\sqrt{3}\)</td>
+                                            <td>-2</td>
+                                            <td>\(-\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>\(-\frac{1}{3}\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>270°</td>
+                                            <td>-1</td>
+                                            <td>0</td>
+                                            <td>undefined</td>
+                                            <td>undefined</td>
+                                            <td>-1</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </span>
+                        <span class="text-justify">
+                            <div class="kuadran">
+                                <h2>Kuadran 4</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sudut</th>
+                                            <th>Nilai Sin</th>
+                                            <th>Nilai Cos</th>
+                                            <th>Nilai Tan</th>
+                                            <th>Nilai Sec</th>
+                                            <th>Nilai Csc</th>
+                                            <th>Nilai Cot</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>300°</td>
+                                            <td>\(-\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(\frac{1}{2}\)</td>
+                                            <td>\(-\sqrt{3}\)</td>
+                                            <td>2</td>
+                                            <td>\(-\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>\(-\frac{1}{3}\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>315°</td>
+                                            <td>\(-\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>\(\frac{1}{2}\sqrt{2}\)</td>
+                                            <td>-1</td>
+                                            <td>\(\sqrt{2}\)</td>
+                                            <td>\(-\sqrt{2}\)</td>
+                                            <td>-1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>330°</td>
+                                            <td>\(-\frac{1}{2}\)</td>
+                                            <td>\(\frac{1}{2}\sqrt{3}\)</td>
+                                            <td>\(-\frac{1}{3}\sqrt{3}\)</td>
+                                            <td>\(\frac{2}{3}\sqrt{3}\)</td>
+                                            <td>-2</td>
+                                            <td>\(-\sqrt{3}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>360°</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>-1</td>
+                                            <td>undefined</td>
+                                            <td>undefined</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Contoh Soal Limit</h2>
+                            <p>1. \(\lim_{{x \to \frac{\pi}{2}}} \cos x = \cos\left(\frac{\pi}{2}\right) = 0\)</p>
+                            <p>2. \(\lim_{{x \to 0}} \frac{\sin(3x)}{x} = \lim_{{x \to 0}} \frac{\sin(3x)}{3x} \cdot 3\)</p>
+                            <p style="margin-left: 20px;">
+                                Misal \(3x = y\), maka \(y \to 0 \iff x \to 0\), sehingga:
+                            </p>
+                            <p style="margin-left: 20px;">
+                                \(\lim_{{x \to 0}} \frac{\sin(3x)}{x} = 3 \cdot \lim_{{y \to 0}} \frac{\sin y}{y} = 3 \cdot 1 = 3\)
+                            </p>
+                            <p>3. \(\lim_{{x \to 4}} \frac{\sin(x - 2)}{x^2 - 4x + 4} = \lim_{{x \to 4}} \frac{\sin(x - 2)}{(x - 2)^2}\)</p>
+                            <p style="margin-left: 20px;">Berlaku Teorema 1:</p>
+                            <p style="margin-left: 20px;">
+                                \(\lim_{{x \to 4}} \frac{\sin(x - 2)}{(x - 2)} \cdot \frac{1}{(x - 2)} = \frac{1}{(4 - 2)} = \frac{1}{2}\)
+                            </p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 Kelompok 2</p>
+        <p>© 2024 Kalkulus Materi Limit. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

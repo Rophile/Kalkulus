@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Sepihak(Kanan-Kiri) </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="materi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script">
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          },
+          options: {
+            renderActions: {
+              findScript: [10, function (doc) {
+                // Menambahkan gaya responsif
+                doc.options.styles = {
+                  'display': 'inline-block',
+                  'max-width': '100%', // Memastikan tidak melampaui lebar kontainer
+                  'overflow-wrap': 'break-word' // Memungkinkan teks untuk membungkus
+                };
+              }, '']
+            }
+          }
+        };
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <span class="font-bold text-white">Alge</span><span class="fond-ligth text-dark">braic</span>
+            <span class="font-bold text-white">Li</span><span class="fond-ligth text-dark">mits</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile Kelompok</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Aljabar</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aljabar.html"> Materi Limit Fungsi Aljabar</a>
+                        <a class="dropdown-item" href="contoha.html">Contoh Soal
+                        </a>
+                        <a class="dropdown-item" href="latihana.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Sepihak</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sepihak.html">Materi Limit Sepihak</a>
+                        <a class="dropdown-item" href="contohb.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanb.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Trigonometri</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="trigonometri.html">Materi Limit Fungsi Trigonometri</a>
+                        <a class="dropdown-item" href="contohc.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanc.html">Latihan Soal</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container mt-0" style="margin-top: 275px;">
+      <h2 style="text-align: center;">Limit Fungsi Aljabar</h2>
+        <div class="row mt-3">
+            <div class="col-md-8">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Soal 1 :</h2>
+                            <p>Hitung nilai limit berikut:</p>
+        <p>
+            \[
+            \lim_{{x \to 1}} \left( \frac{2}{x^2 - 1} - \frac{1}{x - 1} \right)
+            \]
+        </p>
+        <p><strong>Penyelesaian:</strong></p>
+        <p>
+            Pertama, kita sederhanakan ekspresi dengan memfaktorkan penyebut dari pecahan pertama:
+            \[
+            x^2 - 1 = (x - 1)(x + 1)
+            \]
+            sehingga ekspresi menjadi:
+            \[
+            \frac{2}{(x - 1)(x + 1)} - \frac{1}{x - 1}
+            \]
+        </p>
+        <p>
+            Lalu, kita samakan penyebut kedua pecahan tersebut:
+            \[
+            = \frac{2 - (x + 1)}{(x - 1)(x + 1)} = \frac{2 - x - 1}{(x - 1)(x + 1)} = \frac{1 - x}{(x - 1)(x + 1)}
+            \]
+        </p>
+        <p>
+            Karena \(1 - x = -(x - 1)\), kita peroleh:
+            \[
+            = \frac{-(x - 1)}{(x - 1)(x + 1)} = \frac{-1}{x + 1}
+            \]
+        </p>
+        <p>
+            Sekarang kita substitusi \(x = 1\):
+            \[
+            \lim_{{x \to 1}} \frac{-1}{x + 1} = \frac{-1}{1 + 1} = \frac{-1}{2}
+            \]
+        </p>
+        <p><strong>
+            Jadi, nilai dari limit tersebut adalah \(\frac{-1}{2} \). 
+        </strong></p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Soal 2:</h2>
+                             <p>Hitung nilai limit berikut:</p>
+
+        <p>\[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}}\]</p>
+
+        <p><strong>Penyelesaian: </strong></p>
+        <p>Untuk menyelesaikan limit ini, kita bisa memfaktorkan pembilang:</p>
+        <p>\[\frac{{x^2 - 4}}{{x - 2}} = \frac{{(x + 2)(x - 2)}}{{x - 2}} = x + 2\]</p>
+        <p>Dengan demikian, \[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}} = 4\].</p>
+        <p><strong>Jadi, nilai dari limit tersebut adalah \(4 \). </strong></p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Soal 3:</h2>
+                            <p>Hitung nilai limit berikut:</p>
+
+            <p>
+
+                \[
+                \lim_{{x \to 4}} \frac{\sqrt{x} - 2}{x - 4}
+                \]
+            </p>
+            <p><strong>Penyelesaian: </strong></p>
+            <p>Untuk menyelesaikan limit ini, kita dapat menggunakan trik rasionalisasi dengan mengalikan pembilang dan penyebut dengan konjugat dari pembilang:</p>
+            <p>
+                \[
+                \frac{\sqrt{x} - 2}{x - 4} \cdot \frac{\sqrt{x} + 2}{\sqrt{x} + 2} = \frac{x - 4}{(x - 4)(\sqrt{x} + 2)}
+                \]
+            </p>
+            <p>Sederhanakan ekspresi:</p>
+            <p>
+                \[
+                = \frac{1}{\sqrt{x} + 2}
+                \]
+            </p>
+            <p>Sekarang kita substitusi \( x = 4 \):</p>
+            <p>
+                \[
+                \lim_{{x \to 4}} \frac{1}{\sqrt{x} + 2} = \frac{1}{2 + 2} = \frac{1}{4}
+                \]
+            </p>
+            <p><strong>Jadi, nilai dari limit tersebut adalah \(\frac{1}{4} \). </strong></p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 Kelompok 2</p>
+        <p>© 2024 Kalkulus Materi Limit. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

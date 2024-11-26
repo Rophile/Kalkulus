@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Fungsi Aljabar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="materi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script">
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          },
+          options: {
+            renderActions: {
+              findScript: [10, function (doc) {
+                // Menambahkan gaya responsif
+                doc.options.styles = {
+                  'display': 'inline-block',
+                  'max-width': '100%', // Memastikan tidak melampaui lebar kontainer
+                  'overflow-wrap': 'break-word' // Memungkinkan teks untuk membungkus
+                };
+              }, '']
+            }
+          }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">
+            Materi Limit Kalkulus - Limit Fungsi Aljabar
+        </h1>
+        <p class="text-center">
+            Belajar konsep dasar limit dalam kalkulus.
+        </p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <span class="font-bold text-white">Alge</span><span class="fond-ligth text-dark">braic</span>
+            <span class="font-bold text-white">Li</span><span class="fond-ligth text-dark">mits</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile Kelompok</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Aljabar</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aljabar.html"> Materi Limit Fungsi Aljabar</a>
+                        <a class="dropdown-item" href="contoha.html">Contoh Soal
+                        </a>
+                        <a class="dropdown-item" href="latihana.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Sepihak</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sepihak.html">Materi Limit Sepihak</a>
+                        <a class="dropdown-item" href="contohb.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanb.html">Latihan Soal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limit Fungsi Trigonometri</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="trigonometri.html">Materi Limit Fungsi Trigonometri</a>
+                        <a class="dropdown-item" href="contohc.html">Contoh soal</a>
+                        <a class="dropdown-item" href="latihanc.html">Latihan Soal</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container mt-0" style="margin-top: 275px;">
+        <div class="row mt-3">
+            <div class="col-md-8">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Apa itu Limit?</h2>
+                            <br><p>
+                            Limit bisa berarti pendekatan dan berhubungan dengan batas. Arti kata Limit berarti batas, membatasi, mempersempit, atau Mendekatkan. 
+                            <br>Dengan Kata lain, Limit adalah nilai yang didekati suatu titik tertentu.</p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Definisi Limit Fungsi</h2>
+                            <br>
+                            <p>Limit adalah nilai yang didekati oleh sebuah fungsi atau deret saat variabel mendekati suatu nilai tertentu. 
+                            <br>Definisi dari limit menyatakan bahwa suatu fungsi \(f(x)\) akan mendekati suatu nilai tertentu jika \(x\) mendekati nilai tertentu.
+                            </p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Notasi Limit</h2><br>
+                            <p>Bentuk Umum dari Limit Fungsi Aljabar :</p>
+                            <p><ul>
+                                \({\displaystyle \lim_{{x \to a}} f(x) = L, \text{ dimana } x \neq a} \)
+                                </ul></p>
+                            <p>dibaca : "Limit fungsi \(f(x)\) untuk \(x\) mendekati \(a\) adalah \(L\)"</p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>Limit Fungsi Aljabar</h2>
+                            <p>Terdapat tiga metode untuk mengerjakan limit fungsi aljabar, yakni metode substitusi, metode pemfaktoran, dan metode perkalian dengan akar sekawan</p>
+                            <ol><h4>Metode Substitusi</h4></ol>
+                            <p>Metode substitusi merupakan yang paling mudah karena untuk menentukan hasil limit kita hanya perlu mensubstitusi atau memasukkan secara langsung nilai \(x \) ke dalam fungsi pada limit.</p>
+                            <p>
+                                <b>Contoh :</b>
+                                <p>\(\displaystyle \lim_{x \to 2} x^2 + 3x - 4 = \lim_{x \to 2} x^2 + \lim_{x \to 2} 3x - \lim_{x \to 2} 4\)</p>
+                                <p>\(\displaystyle \lim_{x \to 2} x^2 + 3x - 4 = (2)^2 + 3(2) - 4 = 4 + 6 - 4 = 6\)</p>
+                            </p> 
+                        </span>
+                        <span class="text-justify">
+                            <ol><h4>Metode Pemfaktoran</h4></ol>
+                            <p>Untuk menyelesaikan limit yang tidak bisa diselesaikan oleh metode substitusi, kita perlu memfaktorkan fungsinya terlebih dahulu, baru kemudian kita mensubstitusikan nilainya.</p>
+                            <p>
+                                <b>Contoh :</b>
+                                <p>\(\displaystyle \lim_{x \to 3} \frac{x^2-9}{x-3} = \lim_{x \to 3} \frac{(3)^2 - 9}{3-3} = \frac {9-9}{3-3} = \frac{0}{0}\)</p>
+                                <p>Merupakan bentuk tak tentu.</p>
+                                <p>Maka harus difaktorkan terlebih dahulu,</p>
+                                <p>\(\displaystyle\lim_{x \to 3} \frac{x^2-9}{x-3} = \displaystyle\lim_{x \to 3} \frac {(x-3)(x+3)}{x-3} = \displaystyle\lim_{x \to 3} x+3\)</p>
+                                <p>Nilai \(x\) disubstitusikan ke dalam fungsi limit</p>
+                                <p>\(\displaystyle\lim_{x \to 3} x+3 = 3+3 = 6\)</p>
+                            </p>
+                        </span>
+                        <span class="text-justify">
+                            <ol><h4>Metode Perkalian dengan Akar Sekawan</h4></ol>
+                            <p>Inti dari metode ini yaitu mengalikan fungsi pada limit dengan akar sekawannya.</p>
+                            <p><b>Contoh :</b>
+                                <p>\(\displaystyle \lim_{x \to 3} \frac{9-x^2}{4-\sqrt{x^2 + 7}} \) </p>
+                                <p>Merupakan bentuk fungsi persamaan yang irrasional.</p> 
+                                <p>Maka persamaan dikalikan terlebih dahulu dengan akar sekawannya.</p>
+                                <p>\(\displaystyle \lim_{x \to 3} \frac{9-x^2}{4-\sqrt{x^2 + 7}} \cdot \frac{4+\sqrt{x^2 + 7}}{4+\sqrt{x^2 + 7}} = \frac {(9-x^2)(4+\sqrt{x^2 + 7})}{4^2 - (\sqrt{x^2 + 7})^2} = \)</p>
+                                <p>\(\frac {(9-x^2)(4+\sqrt{x^2 + 7})}{16 - (x^2+7)} = \frac {(9-x^2)(4+\sqrt{x^2 + 7})}{9-x^2} = \displaystyle \lim_{x \to 3} 4+\sqrt{x^2 + 7}\)</p>
+                                <p>Nilai \(x\) disubstitusikan ke dalam fungsi limit.</p>
+                                <p>\(\displaystyle\lim_{x \to 3} 4+\sqrt{x^2 + 7} = \lim_{x \to 3}4 +\lim_{x \to 3}\sqrt{x^2 + 7} =\) </p>
+                                <p>\(4 + \sqrt{(3)^2 + 7} = 4 + \sqrt{16} = 4 + 4 = 8\)</p>
+                            </p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                        <h2>Sifat - Sifat Dasar Limit Fungsi</h2>
+                            <br><ul>
+                            <br><li>\(\displaystyle\lim_{{x \to c}} k = k\)</li>
+                            <br><li>\(\displaystyle\lim_{{x \to c}} x = c\)</li>
+                            <br><li>\(\displaystyle\lim_{{x \to c}} kf(x) = k \cdot \lim_{{x \to c}} f(x)\)</li></ul>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <form>
+                    <div>
+                        <span class="text-justify">
+                            <h2>
+                                Aturan Dasar Limit
+                            </h2>
+                            <ul>
+                                <li>
+                                    \(\displaystyle \lim_{{x \to c}} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\)
+                                </li><br>
+                                <li>
+                                    \(\displaystyle\lim_{{x \to c}} [f(x) - g(x)] = \lim_{x \to c} f(x) - \lim_{x \to c} g(x)\)
+                                </li><br>
+                                <li>
+                                    \(\displaystyle\lim_{{x \to c}} [f(x).g(x)] = \lim_{x \to c} f(x).\lim_{x \to c} g(x)\)
+                                </li><br>
+                                <li>
+                                    \(\displaystyle\lim_{{x \to c}} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\)
+                                </li><br>
+                                <li>
+                                    \(\displaystyle\lim_{{x \to c}} [f(x)]^n = [\lim_{x \to c} f(x)]^n\)
+                                </li><br>
+                                <li>
+                                \(\displaystyle\lim_{{x \to c}} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to c} f(x)}\)
+                                </li><br>
+                            </ul>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 Kelompok 2</p>
+        <p>© 2024 Kalkulus Materi Limit. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

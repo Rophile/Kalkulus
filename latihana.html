@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Limit</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #c1e8ff, #7da0ca, #5483b3, #052659); 
+            color: #052659;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #7DA0CA;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #052659;
+        }
+        .question-box {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #5483B3;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+        .question-box h3 {
+            margin-bottom: 10px;
+        }
+        .hint, .discussion, .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .hint {
+            background-color: #FFD700;
+            color: white;
+            display: none;
+        }
+        .discussion {
+            background-color: #7DA0CA;
+            color: black;
+            display: none;
+        }
+        .feedback {
+            font-weight: bold;
+            display: none;
+        }
+        .feedback.correct {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+        }
+        .feedback.incorrect {
+            background-color: #F44336;
+            color: #FFFFFF;
+        }
+        button {
+            background-color: #052659;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5483B3;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #5483B3;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #052659;
+        }
+        input[type="text"]:focus {
+            border-color: #052659;
+            outline: none;
+            background-color: #C1E8FF;
+        }
+        .back-box {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #052659, #5483B3, #7DA0CA, #C1E8FF);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            padding: 20px;
+            background-color: #052659;
+            color: #FFFFFF;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 200px;
+        }
+        .back-box:hover {
+            background-color: #5483B3;
+            transform: scale(1.05);
+        }
+        .back-btn{
+            margin: 0;
+            color: #fff8e1;
+            font-size: 1em;
+            letter-spacing: 1px;
+            font-weight: bold;
+        } 
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Latihan Soal Limit Aljabar</h1>
+
+    <div class="question-box" id="question-1">
+        <h3><b>Soal 1:</b> 
+            $$\lim_{{x \to 2}} \frac{{3x - 6}}{{x + 2}} = ?$$
+        </h3>
+        <input type="text" id="answer-1" placeholder="Masukkan jawaban">
+        <button onclick="checkAnswer(1, 0)">Cek Jawaban</button>
+        <div class="feedback" id="feedback-1"></div>
+        <div class="hint" id="hint-1">Hint: Substitusi nilai \(x\)</div>
+        <div class="discussion" id="discussion-1">
+            Pembahasan:<br>
+            Masukkan nilai \(x = 2\) ke dalam fungsi maka:<br>
+            $$\lim_{{x \to 2}} \frac{{3(2) - 6}}{{2 + 2}} = \frac{{0}}{{4}} = 0$$
+        </div>
+    </div>
+
+    <div class="question-box" id="question-2">
+        <h3><b>Soal 2:</b> 
+            $$\lim_{{x \to 4}} \frac{{3x^3 - 48x}}{{x^2 - 16}} = ?$$
+        </h3>
+        <input type="text" id="answer-2" placeholder="Masukkan jawaban">
+        <button onclick="checkAnswer(2, 12)">Cek Jawaban</button>
+        <div class="feedback" id="feedback-2"></div>
+        <div class="hint" id="hint-2">Hint: Samakan nilai dengan penyebut</div>
+        <div class="discussion" id="discussion-2">
+            Pembahasan:<br>
+            Keluarkan \(3x\) maka:<br>
+            $$\lim_{{x \to 4}} \frac{{3x(x^2 - 16)}}{{x^2 - 16}} = \lim_{{x \to 4}} 3x$$<br>
+            Masukkan nilai \(x = 4\):<br>
+            $$\lim_{{x \to 4}} 3x = 3(4) = 12$$
+        </div>
+    </div>
+
+    <div class="question-box" id="question-3">
+        <h3><b>Soal 3:</b> 
+            $$\lim_{{x \to 2}} \frac{{4 - x^2}}{{3 - \sqrt{{x^2 + 5}}}} = ?$$
+        </h3>
+        <input type="text" id="answer-3" placeholder="Masukkan jawaban">
+        <button onclick="checkAnswer(3, 6)">Cek Jawaban</button>
+        <div class="feedback" id="feedback-3"></div>
+        <div class="hint" id="hint-3">Hint: Kali akar sekawan</div>
+        <div class="discussion" id="discussion-3">
+            Pembahasan:<br>
+            Kali dengan akar sekawan maka:<br>
+            $$\lim_{{x \to 2}} \frac{{4 - x^2}}{{3 - \sqrt{{x^2 + 5}}}} 
+            \cdot \frac{{3 + \sqrt{{x^2 + 5}}}}{{3 + \sqrt{{x^2 + 5}}}}$$<br>
+            $$= \lim_{{x \to 2}} \frac{{(4 - x^2)(3 + \sqrt{{x^2 + 5}})}}{{9 - (x^2 + 5)}}$$<br>
+            $$= \lim_{{x \to 2}} (3 + \sqrt{{x^2 + 5}})$$<br>
+            Masukkan nilai \(x = 2\):<br>
+            $$3 + \sqrt{{2^2 + 5}} = 3 + \sqrt{9} = 3 + 3 = 6$$
+        </div>
+    </div>
+    <a href="aljabar.html" class="back-btn">Kembali</a>
+  </div>
+    <script>
+        function checkAnswer(questionNumber, correctAnswer) {
+            const answerField = document.getElementById(`answer-${questionNumber}`);
+            const feedback = document.getElementById(`feedback-${questionNumber}`);
+            const hint = document.getElementById(`hint-${questionNumber}`);
+            const discussion = document.getElementById(`discussion-${questionNumber}`);
+            let attempts = parseInt(answerField.dataset.attempts || "0");
+
+            if (Number(answerField.value) === correctAnswer) {
+                feedback.textContent = "Jawaban Anda Benar!";
+                feedback.className = "feedback correct";
+                feedback.style.display = "block";
+                hint.style.display = "none";
+                discussion.style.display = "block";
+                discussion.style.backgroundColor = "#7DA0CA"; // Highlight untuk jawaban benar
+            } else {
+                feedback.textContent = "Jawaban Anda Salah.";
+                feedback.className = "feedback incorrect";
+                feedback.style.display = "block";
+                attempts++;
+                answerField.dataset.attempts = attempts;
+
+                if (attempts === 1) {
+                    hint.style.display = "block";
+                } else if (attempts === 3) {
+                    discussion.style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

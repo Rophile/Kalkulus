@@ -1,0 +1,120 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(120deg, #6195f7, #2566b6, #032f5c, #021838); 
+    color: #000000; 
+}
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #7da0ca !important;
+    color: white;
+    padding: 10px 0;
+    top: 0; 
+    z-index: 1000;
+}
+p{
+    font-weight: bold;
+}
+.custom-size{
+    font-size: 15px;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 600px;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #2566b6;
+}
+.kuadran {
+    margin: 20px 0;
+}
+.math {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color: #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    position: sticky; 
+    top: 0; 
+    z-index: 999; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+.nav-link {
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color: #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    position: sticky; 
+    top: 0; 
+    z-index: 999; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+.nav-link {
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #112436; 
+    transform: scale(1.05) translateX(10px); 
+}
+.dropdown-menu {
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color : #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.dropdown.show .dropdown-menu {
+    opacity: 1; 
+    visibility: visible; 
+}
+.dropdown-item {
+    color: #ffffff;
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: scale(1.05) translateX(10px);
+}
+.container {
+    padding-top: 0px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+    padding: 5px;
+}
+footer {
+    background-color: #7da0ca;
+    padding: 20px;
+    text-align: center;
+}
